@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.panel-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-header {
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+.text-outputs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.plot-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.table-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.stat-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-box p {
+    font-size: 0.8em;
+    margin: 0;
+    color: #355;
+}
+
+/* Añadir estilos para remover el fondo y bordes de los elementos output_text_verbatim */
+.shiny-text-output {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    color: #355; /* Puedes ajustar el color del texto aquí si es necesario */
+    font-size: 0.8em; /* Ajustar el tamaño de la fuente */
+    text-align: center;
+    white-space: normal; /* Permitir el ajuste de línea */
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.plot-container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.centered-seg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+}
